@@ -54,7 +54,7 @@ export default function Relationship({
     <div>
       {error.length > 0 ? <Alert severity="error">{error}</Alert> : null}
 
-      <Box sx={{ minWidth: 120 }}>
+      <Box sx={{ minWidth: 120, p: 2 }}>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">
             select first person
@@ -74,7 +74,7 @@ export default function Relationship({
           </Select>
         </FormControl>
       </Box>
-      <Box sx={{ minWidth: 120 }}>
+      <Box sx={{ minWidth: 120, p: 2 }}>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">
             select second person
@@ -94,7 +94,7 @@ export default function Relationship({
           </Select>
         </FormControl>
       </Box>
-      <Box sx={{ minWidth: 120 }}>
+      <Box sx={{ minWidth: 120, p: 2 }}>
         <FormControl fullWidth>
           <InputLabel id="demo-simple-select-label">
             select person relation
@@ -114,14 +114,16 @@ export default function Relationship({
           </Select>
         </FormControl>
       </Box>
-      <Button
-        variant="outlined"
-        onClick={() => {
-          handleAdd();
-        }}
-      >
-        {type}
-      </Button>
+      <Box sx={{ minWidth: 120, p: 2 }}>
+        <Button
+          variant="outlined"
+          onClick={() => {
+            handleAdd();
+          }}
+        >
+          {type}
+        </Button>
+      </Box>
     </div>
   );
 }
